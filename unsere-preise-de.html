@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Unsere Preise - SHAWO Umzüge Berlin">
+    <meta property="og:description" content="Transparente Preisliste für Umzüge, Malerarbeiten, Bodenverlegung und Reinigungsservices in Berlin.">
+    <meta property="og:image" content="https://shawo-umzug-app.de/images/logo.png">
+    <meta property="og:url" content="https://shawo-umzug-app.de/unsere-preise-de.html">
+    <meta property="og:type" content="website">
+    <title>Unsere Preise - SHAWO Umzüge Berlin</title>
+    
+    <!-- JSON-LD Strukturierte Daten -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Unsere Preise - SHAWO Umzüge Berlin",
+      "description": "Transparente Preisliste für Umzüge, Malerarbeiten, Bodenverlegung und Reinigungsservices",
+      "url": "https://shawo-umzug-app.de/unsere-preise-de.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://shawo-umzug-app.de/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Unsere Preise"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "PriceSpecification",
+        "name": "Service Preise",
+        "description": "Umzüge, Malerarbeiten, Bodenverlegung und Reinigung"
+      }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    
+    <link rel="canonical" href="https://shawo-umzug-app.de/unsere-preise-de.html">
+    
+    <style>
+        /* Fügen Sie hier den gleichen CSS Code ein wie in datenschutz-de.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1c1c1c;
+            background: white;
+        }
+        
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 5px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        body {
+            padding-top: 90px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            position: relative;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0041a5;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.05);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1c1c1c;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #0041a5;
+        }
+        
+        .nav-links a.active {
+            color: #0041a5;
+            border-bottom: 3px solid #0041a5;
+            padding-bottom: 5px;
+        }
+        
+        .language-selector {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .language-btn {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            background: #e9ecef;
+            border-color: #0041a5;
+        }
+        
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            min-width: 150px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            z-index: 1000;
+            margin-top: 5px;
+        }
+        
+        .language-dropdown a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.3s;
+        }
+        
+        .language-dropdown a:hover {
+            background: #f8f9fa;
+            color: #0041a5;
+        }
+        
+        .language-dropdown a:last-child {
+            border-bottom: none;
+        }
+        
+        .language-selector:hover .language-dropdown {
+            display: block;
+        }
+
+        .mobile-nav-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 28px;
+            height: 5px;
+            background: #0041a5;
+            margin: 2px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        .page-hero {
+            background: linear-gradient(rgba(0,65,165,0.85), rgba(0,65,165,0.9));
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: #0041a5;
+            color: white;
+            border-color: #0041a5;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #0041a5;
+            border-color: #0041a5;
+        }
+        
+        .btn-home {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .content-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .prices-content {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-category {
+            margin: 50px 0;
+        }
+        
+        .service-category:first-child {
+            margin-top: 0;
+        }
+        
+        .service-category h2 {
+            color: #0041a5;
+            margin: 40px 0 30px 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid #0041a5;
+            padding-bottom: 10px;
+        }
+        
+        .service-category h2:first-child {
+            margin-top: 0;
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        .price-table th {
+            background: #f8f9fa;
+            color: #0041a5;
+            font-weight: 600;
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid #0041a5;
+        }
+        
+        .price-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+        
+        .price-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .price-highlight {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .price-range {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        .note-box {
+            background: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #0041a5;
+        }
+        
+        .note-box h3 {
+            color: #0041a5;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: #f5f5f5;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #0041a5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9em;
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.8em;
+        }
+        
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-telegram-btn, .floating-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-telegram-btn {
+            background: #0088cc;
+        }
+        
+        .floating-home-btn {
+            background: #28a745;
+        }
+
+        .floating-telegram-btn:hover, .floating-home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        }
+
+        .telegram-icon, .home-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                justify-content: space-between;
+            }
+            
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+                border-top: 2px solid #0041a5;
+                z-index: 999;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+                transition: all 0.3s ease;
+            }
+            
+            .nav-links .language-selector {
+                display: none;
+            }
+            
+            .mobile-language-selector {
+                display: block !important;
+            }
+            
+            .nav-links.active {
+                display: flex;
+                animation: slideDown 0.3s ease;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .page-hero h1 {
+                font-size: 2em;
+            }
+            
+            .prices-content {
+                padding: 30px 20px;
+            }
+            
+            .content-section {
+                padding: 50px 20px;
+            }
+            
+            .price-table {
+                font-size: 0.85em;
+            }
+            
+            .price-table th,
+            .price-table td {
+                padding: 8px 10px;
+            }
+            
+            .floating-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .floating-telegram-btn, .floating-home-btn {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+            
+            .telegram-text, .home-text {
+                display: none;
+            }
+            
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        .mobile-language-selector {
+            display: none;
+        }
+
+        @media (max-width: 468px) {
+            .logo {
+                font-size: 20px;
+                gap: 8px;
+            }
+            
+            .logo-img {
+                height: 35px;
+            }
+            
+            .prices-content {
+                padding: 20px 15px;
+            }
+            
+            .page-hero {
+                padding: 60px 20px;
+            }
+            
+            .page-hero h1 {
+                font-size: 1.8em;
+            }
+            
+            .language-btn {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+            
+            .price-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body data-page="preise">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="SHAWO Umzüge" class="logo-img">
+                SHAWO
+            </a>
+            
+            <div class="mobile-nav-wrapper">
+                <!-- Mobile Sprachauswahl -->
+                <div class="language-selector mobile-language-selector">
+                    <div class="language-btn">
+                        🌐 Deutsch
+                    </div>
+                    <div class="language-dropdown">
+                        <a href="unsere-preise-de.html">🇩🇪 Deutsch</a>
+                        <a href="unsere-preise-en.html">🇬🇧 English</a>
+                        <a href="unsere-preise-ar.html">🇦🇪 العربية</a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="live-chat-de.html">Live Chat</a></li>
+                <li><a href="leistungen-de.html">Leistungen</a></li>
+                <li><a href="ueber-uns-de.html">Über uns</a></li>
+                <li><a href="unsere-preise-de.html" class="active">Unsere Preise</a></li>
+                <li><a href="datenschutz-de.html">Datenschutz</a></li>
+                <li><a href="faq-de.html">FAQ</a></li>
+                <li><a href="kontakt-de.html">Kontakt</a></li>
+                <!-- Desktop Sprachauswahl -->
+                <li class="language-selector">
+                    <div class="language-btn">
+                        🌐 Deutsch
+                    </div>
+                    <div class="language-dropdown">
+                        <a href="unsere-preise-de.html">🇩🇪 Deutsch</a>
+                        <a href="unsere-preise-en.html">🇬🇧 English</a>
+                        <a href="unsere-preise-ar.html">🇦🇪 العربية</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1>Unsere Preise</h1>
+        <p>Preisliste für alle unsere Services</p>
+        <a href="index.html" class="btn btn-home">🏠 Zur Startseite</a>
+        <a href="kontakt-de.html" class="btn btn-primary">Kostenlose Beratung</a>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="prices-content">
+            <div class="note-box">
+                <h3>💡 Wichtige Hinweise</h3>
+                <p>Alle Preise inklusive Verpackungsmaterial, Montage & Demontage, Transport und Entladung</p>
+                <p>Keine versteckten Kosten – Alles inklusive (außerhalb Berlin: +1,20 €/km)</p>
+                <p>Versicherung auf Wunsch möglich | Preise liegen leicht über dem Berliner Durchschnitt mit Premium-Service</p>
+            </div>
+
+            <!-- Malerarbeiten Section -->
+            <div class="service-category">
+                <h2>🎨 Malerarbeiten & Renovierung</h2>
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Leistung</th>
+                            <th>Unser Preis</th>
+                            <th>Marktpreis</th>
+                            <th>Bemerkungen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grundierung Wände & Decken</td>
+                            <td class="price-highlight">5 €/m²</td>
+                            <td class="price-range">3-20 €/m²</td>
+                            <td>Je nach Wandzustand</td>
+                        </tr>
+                        <tr>
+                            <td>Nivellierung</td>
+                            <td class="price-highlight">25 €/m²</td>
+                            <td class="price-range">20-70 €/m²</td>
+                            <td>Hohe Qualität, evtl. höherer Preis</td>
+                        </tr>
+                        <tr>
+                            <td>Spachteln Wände & Decken</td>
+                            <td class="price-highlight">20 €/m²</td>
+                            <td class="price-range">15-35 €/m²</td>
+                            <td>Bei Rissen evtl. höherer Preis</td>
+                        </tr>
+                        <tr>
+                            <td>Anstrich Wände, Decken, Schrägen</td>
+                            <td class="price-highlight">12 €/m²</td>
+                            <td class="price-range">10-20 €/m²</td>
+                            <td>Einfach bis mittel</td>
+                        </tr>
+                        <tr>
+                            <td>Tapezieren</td>
+                            <td class="price-highlight">10 €/m²</td>
+                            <td class="price-range">8-15 €/m²</td>
+                            <td>Je nach Tapetentyp</td>
+                        </tr>
+                        <tr>
+                            <td>Anstrich Heizkörper & Rohre</td>
+                            <td class="price-highlight">25 €/m²</td>
+                            <td class="price-range">13-25 €/m²</td>
+                            <td>Abhängig von Vorbereitung</td>
+                        </tr>
+                        <tr>
+                            <td>Behandlung Holzoberflächen</td>
+                            <td class="price-highlight">15 €/m²</td>
+                            <td class="price-range">10-30 €/m²</td>
+                            <td>Alte Oberflächen ggf. abschleifen</td>
+                        </tr>
+                        <tr>
+                            <td>Entfernen Farben & Tapeten</td>
+                            <td class="price-highlight">15 €/m²</td>
+                            <td class="price-range">10-20 €/m²</td>
+                            <td>Je nach Schichtenanzahl</td>
+                        </tr>
+                        <tr>
+                            <td>Türen – Innenanstrich</td>
+                            <td class="price-highlight">100 €/Stück</td>
+                            <td class="price-range">70-130 €/Stück</td>
+                            <td>Zustand der Tür beachten</td>
+                        </tr>
+                        <tr>
+                            <td>Alte Holztüren abschleifen & lackieren</td>
+                            <td class="price-highlight">130 €/Stück</td>
+                            <td class="price-range">100-150 €/Stück</td>
+                            <td>Inkl. Material & Arbeit</td>
+                        </tr>
+                        <tr>
+                            <td>Fenster – Anstrich</td>
+                            <td class="price-highlight">70 €/Stück</td>
+                            <td class="price-range">50-80 €/Stück</td>
+                            <td>Je nach Größe</td>
+                        </tr>
+                        <tr>
+                            <td>Rahmen – Türen & Fenster</td>
+                            <td class="price-highlight">20 €/Stück</td>
+                            <td class="price-range">15-25 €/Stück</td>
+                            <td>Zustand der Rahmen beachten</td>
+                        </tr>
+                        <tr>
+                            <td>Trockenbau / Gipskarton</td>
+                            <td class="price-highlight">40-80 €/m²</td>
+                            <td class="price-range">40-80 €/m²</td>
+                            <td>Abhängig von Komplexität & Material</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Umzug Section -->
+            <div class="service-category">
+                <h2>🚚 Umzugsservices</h2>
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Wohnungsgröße</th>
+                            <th>Unser Preis</th>
+                            <th>Leistungsumfang</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1-Zimmer Wohnung</td>
+                            <td class="price-highlight">450 – 550 €</td>
+                            <td>Komplettumzug mit Fahrzeug, 2 Mitarbeitern, Montage & Verpackung</td>
+                        </tr>
+                        <tr>
+                            <td>2-Zimmer Wohnung</td>
+                            <td class="price-highlight">650 – 750 €</td>
+                            <td>Transport mit 2–3 Mitarbeitern, inkl. Demontage & Montage</td>
+                        </tr>
+                        <tr>
+                            <td>3-Zimmer Wohnung</td>
+                            <td class="price-highlight">850 – 1.050 €</td>
+                            <td>Kompletter Umzug mit LKW, 3 Mitarbeitern, Verpackungsmaterial & Aufbau</td>
+                        </tr>
+                        <tr>
+                            <td>4-Zimmer Wohnung</td>
+                            <td class="price-highlight">1.100 – 1.300 €</td>
+                            <td>Großumzug mit großem LKW, 3–4 Mitarbeitern, Vollservice</td>
+                        </tr>
+                        <tr>
+                            <td>Haus / über 100 m²</td>
+                            <td class="price-highlight">ab 1.500 €</td>
+                            <td>Umzug für Häuser, inkl. Komplettservice & Versicherung</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Stundenpreise Section -->
+            <div class="service-category">
+                <h2>⏱️ Stundenpreise (Alternative)</h2>
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Leistung</th>
+                            <th>Preis</th>
+                            <th>Erklärung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 Transporter + 2 Mitarbeiter</td>
+                            <td class="price-highlight">100 €/Stunde</td>
+                            <td>Vollservice – inkl. Verpackung & Möbelmontage</td>
+                        </tr>
+                        <tr>
+                            <td>1 Transporter + 3 Mitarbeiter</td>
+                            <td class="price-highlight">125 €/Stunde</td>
+                            <td>Für größere Wohnungen mit mehr Möbeln</td>
+                        </tr>
+                        <tr>
+                            <td>1 LKW (groß) + 3 Mitarbeiter</td>
+                            <td class="price-highlight">140 €/Stunde</td>
+                            <td>Für komplette Hausumzüge oder Büros</td>
+                        </tr>
+                        <tr>
+                            <td>Zusätzlicher Mitarbeiter</td>
+                            <td class="price-highlight">35 €/Stunde</td>
+                            <td>Wenn zusätzliche Hilfe benötigt wird</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Bodenverlegung Section -->
+            <div class="service-category">
+                <h2>🏠 Bodenverlegung</h2>
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Leistung</th>
+                            <th>Preis</th>
+                            <th>Erklärung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laminat schwimmend</td>
+                            <td class="price-highlight">36,50 €/m²</td>
+                            <td>Verlegung ohne Kleber mit Trittschalldämmung und Sockelleisten</td>
+                        </tr>
+                        <tr>
+                            <td>Laminat verklebt</td>
+                            <td class="price-highlight">45,00 €/m²</td>
+                            <td>Komplette Verlegung mit Kleber, Trittschalldämmung und Sockelleisten</td>
+                        </tr>
+                        <tr>
+                            <td>PVC schwimmend</td>
+                            <td class="price-highlight">25,00 €/m²</td>
+                            <td>Verlegung ohne Kleber mit Trittschalldämmung und Sockelleisten</td>
+                        </tr>
+                        <tr>
+                            <td>PVC verklebt</td>
+                            <td class="price-highlight">30,00 €/m²</td>
+                            <td>Komplette Verlegung mit Kleber, Trittschalldämmung und Sockelleisten</td>
+                        </tr>
+                        <tr>
+                            <td>Sockelleisten</td>
+                            <td class="price-highlight">6,90–8,20 €/m</td>
+                            <td>Montage der Sockelleisten</td>
+                        </tr>
+                        <tr>
+                            <td>Entfernung Altbelag</td>
+                            <td class="price-highlight">10,00 €/m²</td>
+                            <td>Entfernung des alten Bodenbelags und Entsorgung</td>
+                        </tr>
+                        <tr>
+                            <td>Materialkosten</td>
+                            <td class="price-highlight">nach Absprache</td>
+                            <td>Lieferung der benötigten Materialien</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Reinigung Section -->
+            <div class="service-category">
+                <h2>🧹 Reinigungsservices</h2>
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Leistung</th>
+                            <th>Preis</th>
+                            <th>Erklärung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reinigung nach Umzug / Auszug</td>
+                            <td class="price-highlight">4–6 €/m²</td>
+                            <td>Komplette Reinigung von Wohnungen und Häusern nach dem Umzug, inkl. Küche, Bad und Entfernung von Ablagerungen</td>
+                        </tr>
+                        <tr>
+                            <td>Fensterreinigung</td>
+                            <td class="price-highlight">2–5 €/Fenster</td>
+                            <td>Reinigung der Fenster je nach Größe und Lage</td>
+                        </tr>
+                        <tr>
+                            <td>Teppichreinigung</td>
+                            <td class="price-highlight">20–40 €/m²</td>
+                            <td>Reinigung von Teppichen je nach Verschmutzungsgrad und Teppichtyp</td>
+                        </tr>
+                        <tr>
+                            <td>Backofenreinigung</td>
+                            <td class="price-highlight">ca. 15 €</td>
+                            <td>Komplette Reinigung des Backofens</td>
+                        </tr>
+                        <tr>
+                            <td>Büroreinigung</td>
+                            <td class="price-highlight">20–40 €/h</td>
+                            <td>Reinigung von Büros je nach Bürogröße und Servicehäufigkeit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="note-box">
+                <h3>📞 Individuelles Angebot</h3>
+                <p>Alle Preise sind Richtwerte. Für ein individuelles Angebot kontaktieren Sie uns bitte für eine kostenlose Beratung.</p>
+                <p>Materialkosten: Zwischen 20-30 € für Material oder 0,50-1,00 € pro m² zusätzlich</p>
+            </div>
+
+            <div style="margin-top: 50px; text-align: center;">
+                <a href="index.html" class="btn btn-home">🏠 Zur Startseite</a>
+                <a href="kontakt-de.html" class="btn btn-primary">Kostenloses Angebot anfordern</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="impressum-de.html">Impressum</a>
+            <a href="datenschutz-de.html">Datenschutzerklärung</a>
+            <a href="privacy-policy-de.html">KI-Assistent Datenschutzerklärung</a>
+            <a href="unsere-preise-de.html">Unsere Preise</a>
+            <a href="faq-de.html">FAQ</a>
+            <a href="kontakt-de.html">Kontakt</a>
+        </div>
+        <p class="copyright">© 2025 SHAWO – Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://t.me/SHAWO_bot" class="floating-telegram-btn" target="_blank">
+            <img src="images/social-telegram.jpg" alt="Telegram" class="telegram-icon">
+            <span class="telegram-text">Telegram</span>
+        </a>
+        <a href="index.html" class="floating-home-btn">
+            <img src="images/home-icon.png" alt="Startseite" class="home-icon">
+            <span class="home-text">Startseite</span>
+        </a>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-container') && navLinks.classList.contains('active')) {
+                    mobileMenuBtn.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            const floatingButtons = document.querySelectorAll('.floating-telegram-btn, .floating-home-btn');
+            if (window.scrollY > 100) {
+                floatingButtons.forEach(btn => {
+                    btn.style.animation = 'none';
+                });
+            } else {
+                floatingButtons.forEach(btn => {
+                    btn.style.animation = 'float 3s ease-in-out infinite';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

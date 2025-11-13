@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="SHAWO Umzüge - Leistungen in Berlin">
+    <meta property="og:description" content="Professionelle Umzugsdienstleistungen, Renovierung, Malerarbeiten und mehr in Berlin. Komplettservice von SHAWO Umzüge.">
+    <meta property="og:image" content="https://shawo-umzug-app.de/images/logo.png">
+    <meta property="og:url" content="https://shawo-umzug-app.de/leistungen-de.html">
+    <meta property="og:type" content="website">
+    <title>Leistungen - SHAWO Umzüge Berlin</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "SHAWO Umzüge - Leistungen",
+      "description": "Professionelle Umzugs- und Renovierungsdienstleistungen in Berlin",
+      "url": "https://shawo-umzug-app.de/leistungen-de.html",
+      "provider": {
+        "@type": "MovingCompany",
+        "name": "SHAWO Umzüge",
+        "url": "https://shawo-umzug-app.de"
+      },
+      "areaServed": "Berlin und Brandenburg",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Umzugs, Malerarbeiten, Reinigungs und Renovierungsdienstleistungen",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Komplette Umzüge",
+              "description": "Professioneller Umzugsservice für Privat- und Geschäftskunden"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Renovierung & Sanierung",
+              "description": "Komplette Renovierungsarbeiten für Wohnungen und Häuser"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Malerarbeiten",
+              "description": "Professionelle Maler- und Lackierarbeiten"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    <!-- Basis Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Für moderne Browser -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <link rel="canonical" href="https://shawo-umzug-app.de/leistungen-de.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1c1c1c;
+            background: white;
+        }
+        
+        /* Header Styles */
+        .main-nav {
+            background: white;
+            padding: 5px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        /* Feste Navigation mit Transparency-Effekt */
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 5px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        body {
+            padding-top: 90px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            position: relative;
+        }
+        
+        /* Logo Styles */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0041a5;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.05);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1c1c1c;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #0041a5;
+        }
+        
+        .nav-links a.active {
+            color: #0041a5;
+            border-bottom: 3px solid #0041a5;
+            padding-bottom: 5px;
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .language-btn {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            background: #e9ecef;
+            border-color: #0041a5;
+        }
+        
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            min-width: 150px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            z-index: 1000;
+            margin-top: 5px;
+        }
+        
+        .language-dropdown a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.3s;
+        }
+        
+        .language-dropdown a:hover {
+            background: #f8f9fa;
+            color: #0041a5;
+        }
+        
+        .language-dropdown a:last-child {
+            border-bottom: none;
+        }
+        
+        .language-selector:hover .language-dropdown {
+            display: block;
+        }
+        /* Ensure dropdown stays open when hovering over it */
+        .language-dropdown:hover {
+            display: block;
+        }
+
+        /* Mobile Navigation und Sprachauswahl */
+        .mobile-nav-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        /* Page Hero - ÄNDERUNG: Getrennte Bilder für Desktop und Mobile */
+        .page-hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('images/hero-background.jpg') center/cover no-repeat;
+            background-color: #f5f5f5;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Für größere Bildschirme - Desktop-Bild verwenden */
+        @media (min-width: 769px) {
+            .page-hero {
+                background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('images/hero-background.jpg') center/cover no-repeat;
+            }
+        }
+        
+        /* Für Mobilgeräte - ÄNDERUNG: separates Mobile-Bild verwenden */
+        @media (max-width: 768px) {
+            .page-hero {
+                background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('images/hero-background-mobile.jpg') center/cover no-repeat;
+                min-height: 350px;
+                padding: 60px 15px;
+            }
+        }
+        
+        /* Für sehr kleine Bildschirme */
+        @media (max-width: 480px) {
+            .page-hero {
+                min-height: 300px;
+                padding: 40px 10px;
+            }
+        }
+        
+        .page-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        
+        .page-hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .btn-primary {
+            background: #0041a5;
+            color: white;
+            border-color: #0041a5;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #0041a5;
+            border-color: #0041a5;
+        }
+        
+        .btn-telegram {
+            background: #0088cc;
+            color: white;
+            border-color: #0088cc;
+        }
+        
+        .btn-home {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            border-color: #25D366;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 30px;
+        }
+        
+        .service-content h3 {
+            color: #0041a5;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .service-content p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+        
+        .service-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .service-features li:before {
+            content: "✓";
+            color: #38761d;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .service-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #0041a5;
+            margin-bottom: 20px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: #fef0e8;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: #0041a5;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #f5f5f5;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #0041a5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9em;
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.8em;
+        }
+        
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-telegram-btn, .floating-home-btn, .floating-whatsapp-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-telegram-btn {
+            background: #0088cc;
+        }
+        
+        .floating-home-btn {
+            background: #28a745;
+        }
+        
+        .floating-whatsapp-btn {
+            background: #25D366;
+        }
+
+        .floating-telegram-btn:hover, .floating-home-btn:hover, .floating-whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        }
+
+        .telegram-icon, .home-icon, .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 28px;
+            height: 5px;
+            background: #0041a5;
+            margin: 2px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                justify-content: space-between;
+            }
+            
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+                border-top: 2px solid #0041a5;
+                z-index: 999;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+                transition: all 0.3s ease;
+            }
+            
+            /* Sprachauswahl aus dem Menü entfernen */
+            .nav-links .language-selector {
+                display: none;
+            }
+            
+            /* Mobile Sprachauswahl oben rechts anzeigen */
+            .mobile-language-selector {
+                display: block !important;
+            }
+            
+            .nav-links.active {
+                display: flex;
+                animation: slideDown 0.3s ease;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .page-hero h1 {
+                font-size: 2em;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .service-image {
+                height: 200px;
+            }
+            
+            .floating-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .floating-telegram-btn, .floating-home-btn, .floating-whatsapp-btn {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+            
+            .telegram-text, .home-text, .whatsapp-text {
+                display: none;
+            }
+            
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        /* Desktop: Sprachauswahl im Menü anzeigen, mobile verstecken */
+        .mobile-language-selector {
+            display: none;
+        }
+
+        @media (max-width: 468px) {
+            .logo {
+                font-size: 20px;
+                gap: 8px;
+            }
+            
+            .logo-img {
+                height: 35px;
+            }
+            
+            .service-content {
+                padding: 20px;
+            }
+            
+            .footer-links a {
+                display: block;
+                margin: 8px 0;
+            }
+            
+            /* Kleinere Sprachauswahl für sehr kleine Bildschirme */
+            .language-btn {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body data-page="leistungen">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="SHAWO Umzüge" class="logo-img">
+                SHAWO
+            </a>
+            
+            <div class="mobile-nav-wrapper">
+                <!-- Mobile Sprachauswahl (nur auf Mobilgeräten sichtbar) -->
+                <div class="language-selector mobile-language-selector">
+                    <div class="language-btn">
+                        🌐 Deutsch
+                    </div>
+                    <div class="language-dropdown">
+                        <a href="leistungen-de.html">🇩🇪 Deutsch</a>
+                        <a href="leistungen-en.html">🇬🇧 English</a>
+                        <a href="leistungen-ar.html">🇦🇪 العربية</a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="live-chat-de.html">Live Chat</a></li>
+                <li><a href="leistungen-de.html" class="active">Leistungen</a></li>
+                <li><a href="ueber-uns-de.html">Über uns</a></li>
+                <li><a href="unsere-preise-de.html">Unsere Preise</a></li>
+                <li><a href="datenschutz-de.html">Datenschutzerklärung</a></li>
+                <li><a href="faq-de.html">FAQ</a></li>
+                <li><a href="kontakt-de.html">Kontakt</a></li>
+                <!-- Desktop Sprachauswahl (nur auf Desktop sichtbar) -->
+                <li class="language-selector">
+                    <div class="language-btn">
+                        🌐 Deutsch
+                    </div>
+                    <div class="language-dropdown">
+                        <a href="leistungen-de.html">🇩🇪 Deutsch</a>
+                        <a href="leistungen-en.html">🇬🇧 English</a>
+                        <a href="leistungen-ar.html">🇦🇪 العربية</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1>Unsere Leistungen</h1>
+        <p>Professionelle Umzugs- und Renovierungsdienstleistungen, Malerarbeiten in Berlin und Umgebung. Von der Planung bis zur Ausführung - wir kümmern uns um alles!</p>
+        <a href="index.html" class="btn btn-home">🏠 Zur Startseite</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-grid">
+            <!-- Umzugsdienst -->
+            <div class="service-card">
+                <img src="images/umzug-service.jpg" alt="Professioneller Umzugsservice" class="service-image">
+                <div class="service-content">
+                    <h3>🏠 Komplette Umzüge</h3>
+                    <p>Professioneller Umzugsservice für Privat- und Geschäftskunden in ganz Berlin und Umgebung.</p>
+                    <ul class="service-features">
+                        <li>Privat- & Firmenumzüge</li>
+                        <li>Inlands- & Auslandsumzüge</li>
+                        <li>Möbeltransport & -montage</li>
+                        <li>Verpackung & Einlagerung</li>
+                        <li>Transport von Spezialmöbeln</li>
+                    </ul>
+                    <a href="https://wa.me/4917672407732?text=Ich%20interessiere%20mich%20f%C3%BCr%20einen%20Umzugsservice" class="btn btn-primary">Angebot anfordern</a>
+                </div>
+            </div>
+
+            <!-- Renovierung -->
+            <div class="service-card">
+                <img src="images/renovierung-service.jpg" alt="Renovierungsarbeiten" class="service-image">
+                <div class="service-content">
+                    <h3>🛠 Renovierung & Sanierung</h3>
+                    <p>Komplette Renovierungsarbeiten für Wohnungen, Häuser und Gewerberäume in Berlin.</p>
+                    <ul class="service-features">
+                        <li>Komplettrenovierungen</li>
+                        <li>Trockenbau & Leichtbauwände</li>
+                        <li>Bodenverlegung & Fliesenarbeiten</li>
+                        <li>Elektroinstallationen</li>
+                        <li>Sanitärarbeiten</li>
+                    </ul>
+                    <a href="https://wa.me/4917672407732?text=Ich%20ben%C3%B6tige%20Renovierungsarbeiten" class="btn btn-primary">Angebot anfordern</a>
+                </div>
+            </div>
+
+            <!-- Malerarbeiten -->
+            <div class="service-card">
+                <img src="images/maler-service.jpg" alt="Malerarbeiten" class="service-image">
+                <div class="service-content">
+                    <h3>🎨 Malerarbeiten</h3>
+                    <p>Professionelle Maler- und Lackierarbeiten für Innen- und Außenbereiche in höchster Qualität.</p>
+                    <ul class="service-features">
+                        <li>Innen- & Außenanstrich</li>
+                        <li>Tapetenarbeiten</li>
+                        <li>Fassadenarbeiten</li>
+                        <li>Schimmelentfernung</li>
+                        <li>Design-Beratung</li>
+                    </ul>
+                    <a href="https://wa.me/4917672407732?text=Ich%20ben%C3%B6tige%20Malerarbeiten" class="btn btn-primary">Angebot anfordern</a>
+                </div>
+            </div>
+
+            <!-- Möbelmontage -->
+            <div class="service-card">
+                <img src="images/moebel-service.jpg" alt="Möbelmontage" class="service-image">
+                <div class="service-content">
+                    <h3>🔧 Möbelauf- & Abbau</h3>
+                    <p>Professioneller Auf- und Abbau von Möbeln aller Art - schnell, sicher und zuverlässig.</p>
+                    <ul class="service-features">
+                        <li>IKEA & Designermöbel</li>
+                        <li>Küchenmontage</li>
+                        <li>Schrank- & Regalsysteme</li>
+                        <li>Bett- & Sofamontage</li>
+                        <li>Gartenmöbel Aufbau</li>
+                    </ul>
+                    <a href="https://wa.me/4917672407732?text=Ich%20ben%C3%B6tige%20Hilfe%20beim%20M%C3%B6belaufbau" class="btn btn-primary">Angebot anfordern</a>
+                </div>
+            </div>
+
+            <!-- Reinigung -->
+            <div class="service-card">
+                <img src="images/reinigung-service.jpg" alt="Reinigungsdienst" class="service-image">
+                <div class="service-content">
+                    <h3>🧹 Umzugsreinigung</h3>
+                    <p>Gründliche Reinigung von Wohnungen und Häusern nach dem Umzug oder für den Einzug.</p>
+                    <ul class="service-features">
+                        <li>Endreinigung nach Umzug</li>
+                        <li>Grundreinigung für Einzug</li>
+                        <li>Teppichreinigung</li>
+                        <li>Fensterreinigung</li>
+                        <li>Desinfektion</li>
+                    </ul>
+                    <a href="https://wa.me/4917672407732?text=Ich%20ben%C3%B6tige%20eine%20Umzugsreinigung" class="btn btn-primary">Angebot anfordern</a>
+                </div>
+            </div>
+
+            <!-- Entrümpelung -->
+            <div class="service-card">
+                <img src="images/entruempelung-service.jpg" alt="Entrümpelung" class="service-image">
+                <div class="service-content">
+                    <h3>🗑 Entrümpelung</h3>
+                    <p>Schnelle und zuverlässige Entrümpelung von Wohnungen, Häusern, Kellern und Dachböden.</p>
+                    <ul class="service-features">
+                        <li>Wohnungsauflösungen</li>
+                        <li>Keller- & Dachbodenentrümpelung</li>
+                        <li>Gartenentrümpelung</li>
+                        <li>Gewerbeentrümpelung</li>
+                        <li>Umweltschonende Entsorgung</li>
+                    </ul>
+                    <a href="https://wa.me/4917672407732?text=Ich%20ben%C3%B6tige%20eine%20Entr%C3%BCmpelung" class="btn btn-primary">Angebot anfordern</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Bereit für Ihren Umzug oder Ihre Renovierung?</h2>
+        <p>Kontaktieren Sie uns für ein kostenloses und unverbindliches Angebot!</p>
+        <div style="margin-top: 30px;">
+            <a href="https://wa.me/4917672407732" class="btn btn-whatsapp">WhatsApp Chat starten</a>
+            <a href="tel:+4917672407732" class="btn btn-primary">📞 Kostenlos anrufen</a>
+            <a href="live-chat-de.html" class="btn btn-telegram">🤖 KI-Assistent fragen</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="impressum-de.html">Impressum</a>
+            <a href="datenschutz-de.html">Datenschutzerklärung</a>
+            <a href="privacy-policy-de.html">KI-Assistent Datenschutzerklärung</a>
+            <a href="faq-de.html">FAQ</a>
+            <a href="kontakt-de.html">Kontakt</a>
+        </div>
+        <p class="copyright">© 2025 SHAWO – Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://t.me/SHAWO_bot" class="floating-telegram-btn" target="_blank">
+            <img src="images/social-telegram.jpg" alt="Telegram" class="telegram-icon">
+            <span class="telegram-text">Telegram</span>
+        </a>
+        <a href="index.html" class="floating-home-btn">
+            <img src="images/home-icon.png" alt="Startseite" class="home-icon">
+            <span class="home-text">Startseite</span>
+        </a>
+        <a href="https://wa.me/4917672407732" class="floating-whatsapp-btn" target="_blank">
+            <img src="images/whatsapp-icon.jpg" alt="WhatsApp" class="whatsapp-icon">
+            <span class="whatsapp-text">WhatsApp</span>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle mit Animation
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-container') && navLinks.classList.contains('active')) {
+                    mobileMenuBtn.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        }
+        
+        // Floating Button Animation beim Scrollen
+        window.addEventListener('scroll', function() {
+            const floatingButtons = document.querySelectorAll('.floating-telegram-btn, .floating-home-btn, .floating-whatsapp-btn');
+            if (window.scrollY > 100) {
+                floatingButtons.forEach(btn => {
+                    btn.style.animation = 'none';
+                });
+            } else {
+                floatingButtons.forEach(btn => {
+                    btn.style.animation = 'float 3s ease-in-out infinite';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

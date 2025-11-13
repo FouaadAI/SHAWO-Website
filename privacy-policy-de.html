@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="KI-Assistent Datenschutzerklärung - SHAWO Umzüge Berlin">
+    <meta property="og:description" content="Professionelle Datenschutzerklärung für unseren KI-Assistenten - Transparente Datenverarbeitung bei SHAWO Umzüge">
+    <meta property="og:image" content="https://shawo-umzug-app.de/images/logo.png">
+    <meta property="og:url" content="https://shawo-umzug-app.de/privacy-policy-de.html">
+    <meta property="og:type" content="website">
+    <title>KI-Assistent Datenschutzerklärung - SHAWO Umzüge Berlin</title>
+    
+    <!-- JSON-LD Strukturierte Daten -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PrivacyPolicy",
+      "name": "KI-Assistent Datenschutzerklärung - SHAWO Umzüge",
+      "description": "Umfassende Datenschutzerklärung für den KI-gestützten Telegram-Assistenten von SHAWO Umzüge",
+      "url": "https://shawo-umzug-app.de/privacy-policy-de.html",
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-01-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "SHAWO Umzüge",
+        "url": "https://shawo-umzug-app.de"
+      },
+      "about": {
+        "@type": "Service",
+        "name": "KI-gestützter Umzugsassistent",
+        "description": "Intelligenter Chatbot für Umzugsanfragen und Preisberechnungen"
+      }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    
+    <link rel="canonical" href="https://shawo-umzug-app.de/privacy-policy-de.html">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1c1c1c;
+            background: white;
+        }
+        
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 5px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        body {
+            padding-top: 90px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            position: relative;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0041a5;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.05);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1c1c1c;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #0041a5;
+        }
+        
+        .nav-links a.active {
+            color: #0041a5;
+            border-bottom: 3px solid #0041a5;
+            padding-bottom: 5px;
+        }
+        
+        .language-selector {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .language-btn {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            background: #e9ecef;
+            border-color: #0041a5;
+        }
+        
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            min-width: 150px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            z-index: 1000;
+            margin-top: 5px;
+        }
+        
+        .language-dropdown a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.3s;
+        }
+        
+        .language-dropdown a:hover {
+            background: #f8f9fa;
+            color: #0041a5;
+        }
+        
+        .language-dropdown a:last-child {
+            border-bottom: none;
+        }
+        
+        .language-selector:hover .language-dropdown {
+            display: block;
+        }
+
+        .mobile-nav-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 28px;
+            height: 5px;
+            background: #0041a5;
+            margin: 2px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        .page-hero {
+            background: linear-gradient(rgba(0,65,165,0.85), rgba(0,65,165,0.9));
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: #0041a5;
+            color: white;
+            border-color: #0041a5;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #05501a;
+            border-color: #0a5716;
+        }
+        
+        .btn-home {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .content-section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .legal-content {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .legal-content h2 {
+            color: #0041a5;
+            margin: 40px 0 20px 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid #0041a5;
+            padding-bottom: 10px;
+        }
+        
+        .legal-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .legal-content h3 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+        }
+        
+        .legal-content p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .legal-content ul {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+        
+        .legal-content li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #0041a5;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .contact-info {
+            background: #e7f3ff;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid #0041a5;
+        }
+        
+        .tech-specs {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        footer {
+            background: #f5f5f5;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #0041a5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9em;
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.8em;
+        }
+        
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .floating-telegram-btn, .floating-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-telegram-btn {
+            background: #0088cc;
+        }
+        
+        .floating-home-btn {
+            background: #28a745;
+        }
+
+        .floating-telegram-btn:hover, .floating-home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        }
+
+        .telegram-icon, .home-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                justify-content: space-between;
+            }
+            
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+                border-top: 2px solid #0041a5;
+                z-index: 999;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+                transition: all 0.3s ease;
+            }
+            
+            .nav-links .language-selector {
+                display: none;
+            }
+            
+            .mobile-language-selector {
+                display: block !important;
+            }
+            
+            .nav-links.active {
+                display: flex;
+                animation: slideDown 0.3s ease;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .page-hero h1 {
+                font-size: 2em;
+            }
+            
+            .legal-content {
+                padding: 30px;
+            }
+            
+            .content-section {
+                padding: 50px 20px;
+            }
+            
+            .floating-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .floating-telegram-btn, .floating-home-btn {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+            
+            .telegram-text, .home-text {
+                display: none;
+            }
+            
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        .mobile-language-selector {
+            display: none;
+        }
+
+        @media (max-width: 468px) {
+            .logo {
+                font-size: 20px;
+                gap: 8px;
+            }
+            
+            .logo-img {
+                height: 35px;
+            }
+            
+            .legal-content {
+                padding: 20px;
+            }
+            
+            .page-hero {
+                padding: 60px 20px;
+            }
+            
+            .page-hero h1 {
+                font-size: 1.8em;
+            }
+            
+            .language-btn {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body data-page="privacy-policy">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="SHAWO Umzüge" class="logo-img">
+                SHAWO
+            </a>
+            
+            <div class="mobile-nav-wrapper">
+                <!-- Mobile Sprachauswahl -->
+                <div class="language-selector mobile-language-selector">
+                    <div class="language-btn">
+                        🌐 Deutsch
+                    </div>
+                    <div class="language-dropdown">
+                        <a href="privacy-policy-de.html">🇩🇪 Deutsch</a>
+                        <a href="privacy-policy-en.html">🇬🇧 English</a>
+                        <a href="privacy-policy-ar.html">🇦🇪 العربية</a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="live-chat-de.html">Live Chat</a></li>
+                <li><a href="leistungen-de.html">Leistungen</a></li>
+                <li><a href="ueber-uns-de.html">Über uns</a></li>
+                <li><a href="datenschutz-de.html">Datenschutzerklärung</a></li>
+                <li><a href="privacy-policy-de.html" class="active">KI-Assistent-Datenschutzerklärung</a></li>
+                <li><a href="faq-de.html">FAQ</a></li>
+                <li><a href="kontakt-de.html">Kontakt</a></li>
+                <!-- Desktop Sprachauswahl -->
+                <li class="language-selector">
+                    <div class="language-btn">
+                        🌐 Deutsch
+                    </div>
+                    <div class="language-dropdown">
+                        <a href="privacy-policy-de.html">🇩🇪 Deutsch</a>
+                        <a href="privacy-policy-en.html">🇬🇧 English</a>
+                        <a href="privacy-policy-ar.html">🇦🇪 العربية</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1>KI-Assistent Datenschutzerklärung</h1>
+        <p class="hero-subtitle">Transparente Informationen zur Datenverarbeitung unseres intelligenten Chat-Assistenten</p>
+        <a href="index.html" class="btn btn-home">🏠 Zur Startseite</a>
+        <a href="#contact" class="btn btn-secondary">📧 Datenschutz-Anfrage</a>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="legal-content">
+            <div class="info-box">
+                <h3>🤖 Über unseren KI-Assistenten</h3>
+                <p>Unser KI-gestützter Telegram-Assistent nutzt modernste Technologie, um Ihnen persönliche Umzugsberatung und sofortige Preisberechnungen zu bieten. Diese Datenschutzerklärung erklärt transparent, wie wir Ihre Daten schützen.</p>
+            </div>
+
+            <h2>1. Technische Übersicht</h2>
+            <div class="tech-specs">
+                <strong>Systemarchitektur:</strong><br>
+                • Telegram Bot API Integration<br>
+                • Google Gemini AI für natürliche Sprachverarbeitung<br>
+                • SQLite-Datenbank für Konversationsverläufe<br>
+                • Ende-zu-Ende Verschlüsselung<br>
+                • Deutsche Server-Standorte
+            </div>
+
+            <h2>2. Erhobene Daten und Verwendungszweck</h2>
+            <h3>2.1 Technische Daten</h3>
+            <ul>
+                <li><strong>Telegram User-ID:</strong> Zur Identifikation Ihrer Konversation</li>
+                <li><strong>Benutzername:</strong> Für persönliche Ansprache</li>
+                <li><strong>Zeitstempel:</strong> Zur Nachverfolgung der Interaktion</li>
+                <li><strong>Sprache:</strong> Für mehrsprachigen Support (Automatische Erkennung)</li>
+            </ul>
+
+            <h3>2.2 Konversationsdaten</h3>
+            <ul>
+                <li><strong>Nachrichtenverläufe:</strong> Für kontextbezogene Antworten</li>
+                <li><strong>Projektdetails:</strong> Umzugsgröße, Zimmeranzahl, Entfernungen</li>
+                <li><strong>Preisanfragen:</strong> Für automatische Kostenberechnungen</li>
+                <li><strong>Kontaktinformationen:</strong> Nur auf Ihre explizite Zustimmung</li>
+            </ul>
+
+            <h3>2.3 Verwendungszwecke</h3>
+            <ul>
+                <li>Personalisierte Umzugsberatung und Angebotserstellung</li>
+                <li>Automatische Preisberechnungen basierend auf unserer Preis-Datenbank</li>
+                <li>Mehrsprachiger Kundenservice (Deutsch, Englisch, Arabisch, etc.)</li>
+                <li>Qualitätssicherung und kontinuierliche Verbesserung</li>
+                <li>Betrugsprävention und Missbrauchserkennung</li>
+            </ul>
+
+            <h2>3. Datenverarbeitung und -speicherung</h2>
+            
+            <div class="info-box">
+                <h4>🔐 Verschlüsselung & Sicherheit</h4>
+                <p>Alle Daten werden durchgängig verschlüsselt:</p>
+                <ul>
+                    <li>Transportverschlüsselung (TLS 1.3)</li>
+                    <li>Ruhendaten-Verschlüsselung (AES-256)</li>
+                    <li>Getrennte Speicherung von Identifikations- und Inhaltsdaten</li>
+                    <li>Regelmäßige Sicherheitsaudits</li>
+                </ul>
+            </div>
+
+            <h3>3.1 Speicherdauer</h3>
+            <ul>
+                <li><strong>Konversationsverläufe:</strong> Maximal 12 Monate</li>
+                <li><strong>User-Profile:</strong> 24 Monate nach letzter Aktivität</li>
+                <li><strong>Backup-Daten:</strong> 30 Tage (Verschlüsselt)</li>
+                <li><strong>Analysedaten:</strong> Vollständig anonymisiert nach 3 Monaten</li>
+            </ul>
+
+            <h3>3.2 Datenlokalisation</h3>
+            <p>Alle Server befinden sich in Deutschland und unterliegen der DSGVO. Keine Daten werden außerhalb der EU verarbeitet oder gespeichert.</p>
+
+            <h2>4. KI-spezifische Datenschutzmaßnahmen</h2>
+            
+            <div class="warning-box">
+                <h4>⚠️ Wichtiger Hinweis zur KI-Verarbeitung</h4>
+                <p>Unser KI-System (Google Gemini) verarbeitet Nachrichten zur Generierung von Antworten. Dabei werden:</p>
+                <ul>
+                    <li>Keine persönlichen Daten dauerhaft bei Google gespeichert</li>
+                    <li>Alle Anfragen nach 30 Tagen automatisch gelöscht</li>
+                    <li>Keine Daten für KI-Training verwendet</li>
+                    <li>Strikte Datennutzungsbeschränkungen eingehalten</li>
+                </ul>
+            </div>
+
+            <h3>4.1 Sprachverarbeitung</h3>
+            <ul>
+                <li>Automatische Spracherkennung für mehrsprachigen Support</li>
+                <li>Lokale Verarbeitung von sensiblen Informationen</li>
+                <li>Anonymisierung vor komplexer KI-Analyse</li>
+            </ul>
+
+            <h2>5. Datenweitergabe und -zugriff</h2>
+            <p><strong>Grundsatz: Minimale Datenweitergabe</strong></p>
+
+            <h3>5.1 Interne Zugriffsberechtigungen</h3>
+            <ul>
+                <li><strong>KI-System:</strong> Nur für Antwortgenerierung</li>
+                <li><strong>SHAWO Mitarbeiter:</strong> Nur für Serviceverbesserung</li>
+                <li><strong>Administratoren:</strong> Nur für technische Wartung</li>
+            </ul>
+
+            <h3>5.2 Externe Dienstleister</h3>
+            <ul>
+                <li><strong>Telegram:</strong> Plattform-Betreiber (Nachrichtenübermittlung)</li>
+                <li><strong>Google Cloud:</strong> KI-Verarbeitung (DSGVO-konform)</li>
+                <li><strong>Deutsche Hosting-Provider:</strong> Server-Infrastruktur</li>
+            </ul>
+
+            <div class="info-box">
+                <h4>🚫 Keine Datenweitergabe an Dritte</h4>
+                <p>Wir geben <strong>KEINE</strong> persönlichen Daten an Marketingfirmen, Datenhändler oder andere Dritte weiter. Ihre Daten bleiben sicher bei uns.</p>
+            </div>
+
+            <h2>6. Ihre Rechte (DSGVO)</h2>
+            
+            <div class="info-box">
+                <h4>📋 Übersicht Ihrer Rechte</h4>
+            </div>
+
+            <h3>6.1 Auskunftsrecht</h3>
+            <p>Sie haben jederzeit das Recht auf:</p>
+            <ul>
+                <li>Kostenlose Auskunft über gespeicherte personenbezogene Daten</li>
+                <li>Informationen über Verarbeitungszwecke und Empfänger</li>
+                <li>Kopie aller Sie betreffenden Daten</li>
+            </ul>
+
+            <h3>6.2 Berichtigungs- und Löschungsrechte</h3>
+            <ul>
+                <li><strong>Berichtigung:</strong> Korrektur unrichtiger Daten</li>
+                <li><strong>Löschung:</strong> Vollständige Entfernung Ihrer Daten</li>
+                <li><strong>Einschränkung:</strong> Temporäre Sperrung der Verarbeitung</li>
+                <li><strong>Widerspruch:</strong> Gegen bestimmte Verarbeitungsformen</li>
+            </ul>
+
+            <h3>6.3 Datenübertragbarkeit</h3>
+            <p>Sie erhalten Ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format.</p>
+
+            <h2>7. Besondere Funktionen & Datenschutz</h2>
+
+            <h3>7.1 Automatische Preisberechnung</h3>
+            <ul>
+                <li>Lokale Verarbeitung in unserer Preis-Datenbank</li>
+                <li>Keine Weitergabe von Preisdetails an externe Systeme</li>
+                <li>Transparente Aufschlüsselung aller Kostenpositionen</li>
+            </ul>
+
+            <h3>7.2 Mehrsprachige Verarbeitung</h3>
+            <ul>
+                <li>Automatische Spracherkennung ohne persönliche Profilerstellung</li>
+                <li>Lokale Verarbeitung von Sprachpräferenzen</li>
+                <li>Keine externen Sprachprofil-Dienste</li>
+            </ul>
+
+            <h3>7.3 Konversationsspeicherung</h3>
+            <ul>
+                <li>Begrenzte Aufbewahrung für Service-Qualität</li>
+                <li>Getrennte Speicherung von Identität und Inhalt</li>
+                <li>Automatische Löschung alter Konversationen</li>
+            </ul>
+
+            <h2 id="contact">8. Kontakt & Beschwerden</h2>
+            
+            <div class="contact-info">
+                <h3>📧 Datenschutz-Kontakt</h3>
+                <p><strong>SHAWO Umzüge</strong><br>
+                Wörther Straße 32, 13595 Berlin<br>
+                E-Mail: <strong>shawo.info.betrieb@gmail.com</strong><br>
+                Telefon: <strong>+49 176 72407732</strong></p>
+                
+                <p style="margin-top: 15px;"><strong>Antwortzeit:</strong> Innerhalb von 48 Stunden für Datenschutzanfragen</p>
+            </div>
+
+            <h3>8.1 Beschwerderecht</h3>
+            <p>Sie haben das Recht, Beschwerde bei einer Aufsichtsbehörde einzureichen, insbesondere in dem Mitgliedstaat Ihres Aufenthaltsorts, Ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes.</p>
+
+            <h2>9. Änderungen dieser Richtlinie</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen.</p>
+
+            <div class="info-box">
+                <h4>🔔 Benachrichtigung bei Änderungen</h4>
+                <p>Signifikante Änderungen werden Sie über den Bot benachrichtigen. Die aktuelle Version ist immer unter dieser URL abrufbar.</p>
+            </div>
+
+            <div style="margin-top: 50px; text-align: center; padding-top: 30px; border-top: 2px solid #f0f0f0;">
+                <p><strong>Stand:</strong> 01. Januar 2025</p>
+                <p><strong>Version:</strong> 2.0 - KI-Assistent spezifisch</p>
+                
+                <div style="margin-top: 30px;">
+                    <a href="index.html" class="btn btn-home">🏠 Zur Startseite</a>
+                    <a href="datenschutz-de.html" class="btn btn-primary">Firmen-Datenschutzerklärung</a>
+                    <a href="https://t.me/SHAWO_bot" class="btn btn-secondary" target="_blank">🤖 Bot testen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="impressum-de.html">Impressum</a>
+            <a href="datenschutz-de.html">Datenschutzerklärung</a>
+            <a href="privacy-policy-de.html">KI-Assistent Datenschutzerklärung</a>
+            <a href="faq-de.html">FAQ</a>
+            <a href="kontakt-de.html">Kontakt</a>
+        </div>
+        <p class="copyright">© 2025 SHAWO Umzüge – Professioneller Umzugsservice in Berlin | Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://t.me/SHAWO_bot" class="floating-telegram-btn" target="_blank">
+            <img src="images/social-telegram.jpg" alt="Telegram" class="telegram-icon">
+            <span class="telegram-text">Bot testen</span>
+        </a>
+        <a href="index.html" class="floating-home-btn">
+            <img src="images/home-icon.png" alt="Startseite" class="home-icon">
+            <span class="home-text">Startseite</span>
+        </a>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-container') && navLinks.classList.contains('active')) {
+                    mobileMenuBtn.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            const floatingButtons = document.querySelectorAll('.floating-telegram-btn, .floating-home-btn');
+            if (window.scrollY > 100) {
+                floatingButtons.forEach(btn => {
+                    btn.style.animation = 'none';
+                });
+            } else {
+                floatingButtons.forEach(btn => {
+                    btn.style.animation = 'float 3s ease-in-out infinite';
+                });
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
