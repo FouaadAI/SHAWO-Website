@@ -44,7 +44,6 @@
 | **Google Gemini AI** | Multilingual AI assistant power |
 | **Python** | Backend AI development |
 | **Flask** | Web framework for AI services |
-| **Streamlit** | AI application interface |
 | **Hugging Face** | NLP model integration |
 
 ## 👥 Team
@@ -64,8 +63,8 @@
 ```
 SHAWO_Website/
 │
-│── index.html                 # English homepage
-│── index-de.html              # German homepage
+│── index.html                 # German homepage
+│── index-en.html              # English homepage
 │── index-ar.html              # Arabic homepage
 │
 │── ueber-uns-en.html          # About Us page (English)
@@ -114,10 +113,10 @@ SHAWO_Website/
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/shawo-tech/shawo-umzug-app-website.git
+git clone https://github.com/shawo-tech/SHAWO-Website.git
 
 # Navigate to project directory
-cd shawo-umzug-app-website
+cd SHAWO-Website
 
 # Open in browser or use local server
 python -m http.server 8000
@@ -152,7 +151,7 @@ We welcome contributions to improve our website and services. Please feel free t
 
 ## 🧾 License
 
-This project is licensed under the **MIT License** - see the LICENSE file for details.
+This project is licensed under the **MIT License**
 
 ## 📞 Contact
 
@@ -163,7 +162,7 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 ---
 
 **SHAWO Moves** - *Revolutionizing moving services through AI technology and professional expertise.*
-```
+
 
 ## 💡 Implementation Notes
 
