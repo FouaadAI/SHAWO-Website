@@ -113,7 +113,7 @@ SHAWO_Website/
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/shawo-tech/SHAWO-Website.git
+git clone https://github.com/FouaadAI/SHAWO-Website.git
 
 # Navigate to project directory
 cd SHAWO-Website
